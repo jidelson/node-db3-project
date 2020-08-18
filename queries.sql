@@ -6,7 +6,7 @@ FROM Product as p
 JOIN Category as c
 ON p.CategoryId = c.Id;
 -- Display the order Id and shipper CompanyName for all orders placed before August 9 2012. Shows 429 records.
-SELECT o.id, o.shipName as Shipper_Company_Name
+SELECT o.id, o.shipName as Shippers_Company_Name
 FROM [Order] as o
 WHERE o.orderDate < '2012-08-09'
 ORDER BY o.OrderDate desc;
